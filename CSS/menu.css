@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: rgb(210, 219, 228);
+}
+
+nav.menu-lateral{
+    width: 256px;
+    height: 595px;
+    background-color: #FFFFFF;
+    padding-top: 2%;
+    margin-top: 8%;
+    margin-left: 100px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    /* top: 0;
+    left: 0; */
+    /* overflow: visible; */
+    /* transition: all .3s; */
+}
+
+.linha{
+    margin-left: 10px;
+    /* background-color: blue; */
+}
+
+#linha-img{
+    width: 180px;
+}
+
+/* Botão de expandir */
+
+/* .btn-expandir {
+    width: 100%;
+    position: absolute;
+    transition: left 0.3s;
+}
+
+.expandir #icon-seta {
+    transform: rotate(180deg);
+}
+
+nav.menu-lateral:not(.expandir) .btn-expandir {
+    left: 72px;  Mova o botão quando o menu estiver fechado
+    top: 32px;
+}
+
+nav.menu-lateral.expandir .btn-expandir {
+    left: 250px; Mova o botão quando o menu estiver expandido
+    top: 32px;
+}
+
+#icon-seta{
+    background-color: #FFFFFF;
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid #F6F6F6;
+    border-radius: 8px;
+    padding: 5px;
+} */
+
+/* itens menu 1 */
+.container-itens-menu{
+    width: 200px;
+    /* margin-left: 4%; */
+    /* background-color: red; */
+    transition: 0.3s;
+}
+
+ul{
+    height:100%;
+    list-style-type:none;
+}
+
+.container-itens-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+ul li.item-menu a{
+    color: #030723;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px 12px 10px 12px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* icones menu */
+ul li.item-menu a .icon{
+    height: 0px;
+}
+
+/* icon seta */
+
+ul li.item-menu .sub-menu {
+    display: none; /* Oculta o submenu por padrão */
+    /* margin-left: 10px; */
+    transition: max-height 0.3s ease; /* Para animação suave ao expandir */
+}
+
+ul li.item-menu .sub-menu.active {
+    display: block;
+}
+
+ul li.item-menu a .dropdown {
+    position: absolute;
+    right: 36px;
+    margin: 0px;
+    transition: transform 0.3s ease; /* Animação para rotação */
+}
+
+ul li.item-menu .sub-menu.active + a .dropdown {
+    transform: rotate(180deg); /* Rotaciona o ícone */
+}
+
+/* FILTRO PREÇO */
+
+/* .sub-menu{
+    background-color: blue;
+} */
+
+.form-preco{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.input-preco{
+    /* background-color: red; */
+    width: 60px;
+    border-radius: 3px;
+}
+
+#linha2-img{
+    display: flex;
+    margin-top: 50%;
+}
+
+.text-filtro{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 62%;
+}
+
+
+
+
+
+
+
+
+
