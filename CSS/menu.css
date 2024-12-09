@@ -6,13 +6,14 @@
 
 body{
     height: 100vh;
-    background-color: rgb(210, 219, 228);
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(58, 58, 58);
 }
 
 nav.menu-lateral{
     width: 256px;
     height: 595px;
-    background-color: #FFFFFF;
+    background-color: #fff;
     padding-top: 2%;
     margin-top: 8%;
     margin-left: 100px;
@@ -87,7 +88,7 @@ ul{
 ul li.item-menu a{
     color: #030723;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     padding: 10px 12px 10px 12px;
     display: flex;
     align-items: center;
@@ -129,31 +130,171 @@ ul li.item-menu .sub-menu.active + a .dropdown {
     background-color: blue;
 } */
 
-.form-preco{
+.wrapper{
+    height: 90px;
+    width: 180px;
+    margin-left: 5%;
     /* background-color: red; */
-    display: flex;
-    justify-content: center;
-    gap: 15px;
 }
 
 .input-preco{
     /* background-color: red; */
-    width: 60px;
-    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
 }
+
+.input-preco .field{
+    width: 100%;
+    height: 30px;
+    /* display: flex; */
+}
+
+.field input{
+   width: 100%;
+   height: 100%;
+   outline: none;
+   font-size: 14px;
+   padding: 8px;
+   border: .5px solid #9F9F9F;
+   border-radius: 3px;
+   -moz-appearence: none;
+}
+
+.field input[type="number"]::-webkit-outer-spin-button,
+.field input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
 
 #linha2-img{
     display: flex;
-    margin-top: 50%;
+    margin-top: 75%;
+}
+
+.slider{
+    top: 16px;
+    height: 4px;
+    border-radius: 5px;
+    background: #ddd;
+    position: relative;
+}
+
+.slider .progress{
+    height: 5px;
+    left: 25%;
+    right: 25%;
+    position: absolute;
+    background: #414141;
+}
+
+.range-input {
+    top: 16px;
+    position: relative;
+}
+
+.range-input input {
+    position: absolute;
+    top: -4px;
+    height: 4px;
+    width: 100%;
+    background: none;
+    pointer-events: none;
+    appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    pointer-events: auto;
+    appearance: none;
+    background: #000000;
+}
+
+input[type="range"]::-moz-range-thumb{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    pointer-events: auto;
+    -webkit-appearence: none;
+    background: #000000;
 }
 
 .text-filtro{
     /* background-color: red; */
+    font-size: 14px;
+    font-weight: 400;
     display: flex;
     justify-content: center;
+    color: #A7A7A7;
     align-items: center;
-    gap: 62%;
+    gap: 75%;
+    margin: 20px 0px 8px 0px;
 }
+
+/* Barra de pesquisa */
+.search-box{
+    display: flex;
+    align-items: center;
+    background-color: #F5F5F5;
+    width: 180px;
+    height: 40px;
+    margin: 16px 10px;
+    border-radius: 8px;
+}
+.search-input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.img-busca{
+    padding-left: 4px;
+}
+
+
+.lista-marcas{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    /* background-color: red; */
+    padding-left: 12px;
+}
+
+.lista-marcas label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.lista-marcas input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.checkbox {
+    display: none;
+}
+
+.lista-marcas label::before {
+    margin-right: 8px;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: .5px solid #D3D3D3;
+    background-color: white;
+    border-radius: 3px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+
+
 
 
 

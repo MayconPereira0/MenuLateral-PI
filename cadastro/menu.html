@@ -18,11 +18,7 @@
                         <img src="../imagens/Divider.png" alt="" id="linha-img">
                     </div>
                     <div class="sub-menu">
-                        <div class="text-filtro">
-                            <div class="span"><span>De</span></div>
-                            <div class="span"><span>Até</span></div>
-                        </div>
-                        <form class="form-preco">
+                        <!-- <form class="form-preco">
                             <div class="min">
                                 <input type="text" id="min-preco" class="input-preco">
                             </div>
@@ -30,17 +26,27 @@
                             <div class="max">
                                 <input type="text" id="max-preco" class="input-preco">
                             </div>
-                        </form>
-                        <div class="wrrapper">
+                        </form> -->
+                        <div class="wrapper">
+                            <div class="text-filtro">
+                                <div class="span"><span>De</span></div>
+                                <div class="span"><span>Até</span></div>
+                            </div>
                             <div class="input-preco">
                                 <div class="field">
-                                    <span>Min</span>
                                     <input type="number" class="input-min" value="0">
                                 </div>
+                                <div><img src="../imagens/Line 16.png" alt="" id="linha2-img"></div>
                                 <div class="field">
-                                    <span>Max</span>
                                     <input type="number" class="input-min" value="10000">
                                 </div>
+                            </div>
+                            <div class="slider">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="range-input">
+                                <input type="range" class="range-min" min="0" max="10000" value="2500">
+                                <input type="range" class="range-max" min="0" max="10000" value="7500">
                             </div>
                         </div>
                     </div>
@@ -54,8 +60,26 @@
                             <img src="../imagens/Divider.png" alt="" id="linha-img">
                         </div>
                         <div class="sub-menu">
-                            <a href="#" class="sub-item">Pedidos Enviados</a>
-                            <a href="#" class="sub-item">Pedidos Cancelados</a>
+                            <div class="search-box">
+                                <a class="search-btn">
+                                    <img class="img-busca" src="../imagens/Search (1).png" alt="icon-search">
+                                </a>
+                                <input type="text" class="search-input" placeholder="Busca">
+                            </div>
+                            <div class="lista-marcas">
+                                <label>
+                                    <input type="checkbox" class="checkbox" value="marca1"> Samsung
+                                </label>
+                                <label>
+                                    <input type="checkbox" class="checkbox" value="marca2"> Lenovo
+                                </label>
+                                <label>
+                                    <input type="checkbox" class="checkbox" value="marca3"> Xiaomi
+                                </label>
+                                <label>
+                                    <input type="checkbox" class="checkbox" value="marca4"> AOC
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </li>
